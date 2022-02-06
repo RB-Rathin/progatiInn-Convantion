@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PandaOnlineShop</title>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/4e2f466c0e.js" crossorigin="anonymous"></script>
+    <!-- Bootstraps -->
+    <link rel="stylesheet" href="styles/Css/bootstrap.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles/Css/style.css">
+</head>
+
+<body>
+    <!-- Header-area -->
+    <header class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+            <div class="toast show">
+                <div class="toast-header">
+                    Toast Header
+                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body">
+                    Some text inside the toast body
+                </div>
+            </div>
+            <div class="container-fluid">
+                <a class="navbar-brand fs-2" href="#"><i class="fast-icon fas fa-play"></i><i
+                        class="second-icon fas fa-play"></i>PANDA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#">Shoes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#">Backpaks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#">Subcription</a>
+                        </li>
+
+                </div>
+            </div>
+        </nav>
+        <!-- baner-section -->
+        <!-- slider-one -->
+        <section class="baner-section" class="container mt-5 bg-info rounded">
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active p-5">
+                        <div class="row">
+                            <div class="col-lg-7 d-flex align-items-center">
+                                <div class="">
+                                    <h1>Panda Cool Headphones</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis ipsam,
+                                        corrupti unde debitis voluptatem?</p>
+                                    <h1>$420</h1>
+                                    <button class="btn btn-warning">BUY NOW</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slaider-two -->
+                    <div class="carousel-item p-5">
+                        <div class="row">
+                            <div class="col-lg-7 d-flex align-items-center">
+                                <div class="">
+                                    <h1>Panda Smart TB</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis ipsam,
+                                        corrupti unde debitis voluptatem?</p>
+                                    <h1>$1200</h1>
+                                    <button class="btn btn-warning">BUY NOW</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slaider-three -->
+                    <div class="carousel-item  p-5">
+                        <div class="row">
+                            <div class="col-lg-7 d-flex align-items-center">
+                                <div class="">
+                                    <h1>Enjoy Your Time With X-BOX</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis ipsam,
+                                        corrupti unde debitis voluptatem?</p>
+                                    <h1>$120</h1>
+                                    <button class="btn btn-warning">BUY NOW</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- End-Bander-section -->
+
+    </header>
+    
+    <!-- Header-End -->
+    <!-- catagoris -->
+
+
+
+
+    <script src="styles/Javascript/bootstrap.min.js">
+        document.getElementById("toastbtn").onclick = function () {
+            var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+            var toastList = toastElList.map(function (toastEl) {
+                return new bootstrap.Toast(toastEl)
+            })
+            toastList.forEach(toast => toast.show())
+        }
+    </script>
+
+</body>
+
+</html>
